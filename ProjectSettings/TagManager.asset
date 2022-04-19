@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 856600779
+    locked: 0
+  - name: Ness
+    uniqueID: 2757290227
+    locked: 0
