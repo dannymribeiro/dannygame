@@ -9,9 +9,21 @@ public class PlayerController : MonoBehaviour {
 
     public Animator myAnim;
 
+    public static PlayerController instance;
+
+    public string areaTransitionName;
+
     // Use this for initialization
     void Start () {
-        
+        if (instance == null)
+        {  
+            instance = this;
+        } else 
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
